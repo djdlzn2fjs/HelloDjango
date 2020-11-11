@@ -14,3 +14,8 @@ class BoardDetailSerializer(ModelSerializer): # view
         model = Board
         files = ['id', 'title', 'userid', 'regdate', 'views', 'thumbup', 'contents']
 
+
+class BoardCreateSerializer(ModelSerializer): # create
+    class Meta:
+        model = Board
+        files = ['title', 'userid', 'contents']
