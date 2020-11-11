@@ -47,7 +47,7 @@
                         본문내용</label>
                     <textarea id="contents" name="contents" rows="15"
                          class="form-control col-9">
-                         {{ form.contents.value|default_if_none:}}"></textarea>
+                         {{ form.contents.value|default_if_none:''}}"></textarea>
                 </div><!-- 본문내용 -->
 
                 <div class="form-group row">
